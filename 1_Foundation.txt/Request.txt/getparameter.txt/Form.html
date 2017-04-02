@@ -1,0 +1,57 @@
+/*
+  提交到JSP的表单页面，
+*/
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>注册表单</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=gbk">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+    <form action="RequestDemo.jsp" method="post">
+    	<table>
+    		<tr>
+    			<td>用户名</td>
+    			<td><input type="text" name="username"/></td>
+    		</tr>
+    		<tr>
+    			<td>密码</td>
+    			<td><input type="password" name="upassword"/></td>
+    		</tr>
+    		<tr>
+    			<td>确认密码</td>
+    			<td><input type="password" name="repassword"/></td>
+    		</tr>
+    		<tr>
+    			<td>姓名</td>
+    			<td><input type="text" name="name"/></td>
+    		</tr>
+    		<tr>
+    			<td>年龄</td>
+    			<td><input type="text" name="age"/></td>
+    		</tr>
+    		<tr>
+    			<td>性别</td>
+    			<td>
+    				<input type="radio" name="sex" value="男"/>男
+                    <input type="radio" name="sex" value="女"/>女
+    			</td>
+    		</tr>
+    		<tr>
+    			<td>用户名</td>
+    			<td><input type="submit" value="注册"></td>
+    			<td><input type="reset" value="重置"></td>
+    		</tr>
+    	</table>
+    </form>
+  </body>
+</html>
