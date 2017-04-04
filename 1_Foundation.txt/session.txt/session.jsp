@@ -11,7 +11,6 @@
    Session技术把用户的数据写到用户独占的session中。
    Session对象由服务器创建，开发人员可以调用request对象的getSession方法得到session对象。
 
-4、
 */
 
 
