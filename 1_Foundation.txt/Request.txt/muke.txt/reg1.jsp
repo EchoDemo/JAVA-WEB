@@ -1,5 +1,12 @@
-<%--
+<%--使用URL传参数时，对于中文字符会产生乱码，此时需要对Tomcat下的conf文件夹里面的的server.xml文件进行修改，在端口修改所在的地方加上
+URIEncoding="utf-8"
 
+
+如：
+<Connector port="80" protocol="HTTP/1.1"
+               connectionTimeout="20000"
+               redirectPort="8443" URIEncoding="utf-8" />
+	       
 --%>
 
 <%@ page language="java" import="java.util.*" contentType="text/html; charset=UTF-8"%>
@@ -49,6 +56,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	</form>
   	<br>
   	<br>
-  	<a href="login.jsp?username=lisi">测试URL传参数</a>
+  	<a href="login.jsp?username=李四">测试URL传参数</a>
   </body>
 </html>
