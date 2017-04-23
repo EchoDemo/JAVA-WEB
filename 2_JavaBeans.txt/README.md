@@ -13,15 +13,20 @@
  JSP动作分为以下几类：
     （1）与存取JavaBean有关的6个元素。 如：
     <jsp:useBean> <jsp:setProperty> <jsp:getProperty>
+    
     （2）6个动作元素。 如：
     <jsp:include> <jsp:forward> <jsp:param> <jsp:plugin> <jsp:params> <jsp:fallback>
+    
     （3）与Document有关的6个元素：
     <jsp:root> <jsp:declaration> <jsp:scriptlet> <jsp:expression> <jsp:text> <jsp:output>
+    
     （4）用来动态生成XML元素标签的3个动作：
     <jsp:attribute> <jsp:body> <jsp:element>
+    
     （5）用在Tag File中的2个元素：
     <jsp:invoke> <jsp:dobody>
     
+    
 三、javabean的作用域范围
 
 通过<jsp:useBean>标签的scope属性进行设置
@@ -43,7 +48,7 @@ JavaBean的生命周期存在于4种范围之中，分别为page、request、ses
 
 
 
-    这4种作用范围与JavaBean的生命周期是息息相关的，当JavaBean被创建后，通过<jsp:setProperty>标签与<jsp:getProperty>标签调用时，将会按照page、
+这4种作用范围与JavaBean的生命周期是息息相关的，当JavaBean被创建后，通过<jsp:setProperty>标签与<jsp:getProperty>标签调用时，将会按照page、
 request、session和application的顺序来查找这个JavaBean实例，直至找到一个实例对象为止，如果在这4个范围内都找不到JavaBean实例，则抛出异常。
 
 
